@@ -1,0 +1,87 @@
+// main:../styles.less
+
+.progress{
+    max-width: 1305px;
+    margin: -35px auto 0;
+    position: relative;
+
+    .progress__img {
+        position: absolute;
+        top: 235px;
+        left: 365px;
+        z-index: 999;
+    }
+
+    .progress__dot {
+        width: 25px;
+        height: 25px;
+        background-color: @aqua;
+        border-radius: 50%;
+        position: absolute;
+        
+
+        &:nth-of-type(2) {
+            top: 270px;
+            left: 150px;
+        }
+
+        &:nth-of-type(3) {
+            top: 265px;
+            left: 380px;
+        }
+
+        &:nth-of-type(4) {
+            top: 235px;
+            left: 500px;
+        }
+
+        &:nth-of-type(5) {
+            top: 140px;
+            left: 650px;
+        }
+
+        &:nth-of-type(6) {
+            top: 135px;
+            left: 750px;
+        }
+
+        &:nth-of-type(7) {
+            top: 165px;
+            left: 890px;
+        }
+
+        &:nth-of-type(8) {
+            top: 110px;
+            left: 990px;
+        }
+
+        &:nth-of-type(9) {
+            top: 10px;
+            left: 1110px;
+        }
+
+        span {
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: transparent;
+            padding: 3px 15px;
+            font-size: 1.67rem;
+            border-radius: 5px;
+           
+        }
+
+        &.active {
+            background-color: @red;
+
+            span {
+                background-color: @red;
+                color: @white;
+            }
+        }
+    }
+}
+
+
+

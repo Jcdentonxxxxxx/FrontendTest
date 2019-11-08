@@ -1,0 +1,83 @@
+// main:../styles.less
+
+.accordion {
+    width: 19.5%;
+    font-size: 0.86rem;
+    z-index: 1000;
+
+    .accordion__inner {
+
+        &.active {
+            .accordion__content {
+                display: block;
+                user-select: none;
+            }
+
+            .accordion__header {
+                &::after {
+                    -webkit-transform: translateY(-50%) rotate(-45deg);
+                    transform: translateY(-50%) rotate(-45deg);
+                }
+            }
+        }
+
+        .accordion__header {
+            background-color: @grey-light;
+            padding: 10px;
+            position: relative;
+            cursor: pointer;
+
+            .accordion__title {
+                user-select: none;
+            }
+
+            &::after {
+                content: '';
+                display: block;
+                width: 10px;
+                height: 10px;
+                border-top: 2px solid @aqua;
+                border-right: 2px solid @aqua;
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                z-index: 1;
+                -webkit-transform: translateY(-50%) rotate(135deg);
+                transform: translateY(-50%) rotate(135deg);
+            }
+        }
+
+        .accordion__content {
+            font-size: 0.86rem;
+            font-weight: 300;
+            display: none;
+            background-color: @grey;
+            overflow-y: scroll;
+            max-height: 150px;
+
+            p {
+                padding: 10px;
+                margin: 0;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: @grey-light;
+                }
+
+                &.active {
+                    color: @aqua;
+                }
+            }
+        }
+
+
+
+    }
+}
+
+
+
+
+
+
+

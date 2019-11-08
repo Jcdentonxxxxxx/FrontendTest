@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Open+Sans:400,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="libraries/jquery.scrollbar.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>ProjectFrontend</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <!--Header-->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+
+
+                <div class="header__item">
+                    <h1 class="header__title">Наша миссия</h1>
+
+                    <div class="header__text">
+                        ВЛБАНК (ОАО) перешёл на промышленную эксплуатацию автоматизированной банковской системы
+                        ЦФТ-Банк, современного масштабируеиого решения,
+                        позволившего банку перестроить свой технологический
+                    </div>
+                </div>
+
+
+                <div class="accordion" >
+                    <div class="accordion__inner active" >
+                        <div class="accordion__header" data-collapse="#years">
+
+                            <div class="accordion__title">2002</div>
+
+                        </div>
+                        <div class="accordion__content scrollbar-outer" id="select">
+                            <p data-year="year8">2008</p>
+                            <p data-year="year7">2007</p>
+                            <p data-year="year6">2006</p>
+                            <p data-year="year5">2005</p>
+                            <p data-year="year4">2004</p>
+                            <p data-year="year3">2003</p>
+                            <p class="active" data-year="year2">2002</p>
+                            <p data-year="year1">2001</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </header>
+
+    <div class="progress" id="progress">
+        <svg width="1305" height="365" viewBox="0 0 1305 365">
+            <path
+                style="fill:none;stroke:transparent;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+                d="m 0.33866737,367.71021 20.43295863,0.67733 h 10.837371 10.83737 l 9.934256,-2.70934 9.031142,-3.61246 9.031142,-3.61245 8.128027,-5.41869 7.224914,-6.3218 5.418685,-8.12802 7.224913,-7.22492 6.321804,-7.22491 5.41868,-6.3218 7.22491,-9.03114 5.41869,-6.3218 8.12803,-6.3218 7.22491,-3.61246 9.93426,-6.3218 7.67647,-4.51557 8.12802,-3.61246 9.93426,-3.1609 8.57959,-2.70934 9.93425,-2.70934 9.93426,-1.80623 9.93425,-1.35467 10.38582,-0.90311 h 9.93425 l 9.4827,-0.90312 10.38582,-0.90311 h 10.38581 l 9.4827,-0.90312 9.4827,1.80623 H 292.609 l 10.83737,2.25779 9.93425,0.45155 9.03114,2.25779 10.38582,0.45156 9.4827,2.25778 10.38581,0.90312 10.38581,1.80622 9.4827,0.90312 9.93426,1.35467 9.4827,1.80623 h 9.4827 l 9.93425,0.45156 10.83737,0.45155 10.38582,-0.45155 9.93425,-2.25779 9.03114,-1.80623 11.28893,-1.80623 10.38581,-1.35467 9.03115,-4.51557 8.57958,-4.06401 8.57959,-4.96713 9.03114,-4.51557 9.03114,-6.3218 8.57958,-6.3218 8.57959,-5.87024 7.67647,-5.41869 8.12803,-7.22491 8.57958,-7.67647 7.67647,-5.87024 7.22492,-6.3218 8.12802,-5.87025 8.57959,-6.32179 8.12803,-6.3218 7.67647,-5.41869 9.03114,-5.87024 8.57958,-5.41869 9.03115,-4.06401 7.67647,-3.61246 9.93425,-4.06401 9.4827,-2.70934 9.93426,-2.70935 9.03114,-1.80622 9.93425,-1.35468 9.4827,-0.90311 10.38582,-0.45156 11.28892,-0.45155 9.03115,0.45155 9.4827,0.90312 10.83737,0.45155 10.38581,1.35468 9.03114,1.80622 11.28893,1.80623 9.4827,3.1609 9.4827,2.70934 10.38581,2.25779 9.4827,2.25779 9.03114,2.70934 10.38581,2.70934 10.38582,2.70934 9.4827,2.25779 10.83737,1.35467 9.48269,0.90311 10.38582,0.90312 9.93425,-0.45156 9.4827,-1.35467 10.83737,-2.25779 9.93426,-2.70934 9.03114,-2.70934 9.93426,-3.61246 8.57958,-4.06401 9.03114,-5.41869 7.67647,-5.87024 9.03115,-6.3218 8.57958,-7.22491 7.67647,-6.3218 7.22491,-7.22491 7.2249,-7.22492 6.3218,-6.77335 4.9671,-5.41869 6.7734,-9.482698 5.8702,-7.676471 5.4187,-6.321799 7.6765,-8.128028 8.128,-8.128027 7.2249,-5.870243 8.1281,-6.773356 8.5796,-5.870242 8.128,-4.967128 9.0311,-4.064014 9.9343,-3.612457 8.5796,-2.257785 10.3858,-1.806229 9.0311,-1.354671 9.9343,-0.451557 11.7405,-0.451557 9.0311,0.451557 9.4827,-0.451557 9.4827,0.451557 10.3858,-0.903114 h 9.9343 l 9.9342,-0.903114 h 10.8374 l 9.0311,-0.451557 10.3858,-1.354672 9.9343,-1.806228 9.9343,-1.354671 9.4827,-2.709343 9.0311,-4.515571 8.5796,-4.0640138 6.3218,-3.6124567">
+            </path>
+            <image href="images/curve.png" width="1305" height="365" />
+        </svg>
+        <div id="img" class="progress__img">
+            <img src="images/ship.png" alt="">
+        </div>
+
+        <div class="progress__dot" data-dot="year1">
+            <span>2001</span>
+        </div>
+        <div class="progress__dot active" data-dot="year2">
+            <span>2002</span>
+        </div>
+        
+        <div class="progress__dot" data-dot="year3">
+            <span>2003</span>
+        </div>
+        <div class="progress__dot" data-dot="year4">
+            <span>2004</span>
+        </div>
+        <div class="progress__dot" data-dot="year5">
+            <span>2005</span>
+        </div>
+        <div class="progress__dot" data-dot="year6">
+            <span>2006</span>
+        </div>
+        <div class="progress__dot" data-dot="year7">
+            <span>2007</span>
+        </div>
+        <div class="progress__dot" data-dot="year8">
+            <span>2008</span>
+        </div>
+    </div>
+
+    <section class="description">
+        <div class="container">
+            <div class="description__item" id="year1">
+                <h2 class="description__title">Начало</h2>
+
+                <h3 class="description__undertitle">01 января 2001г</h3>
+
+                <div class="description__text">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum omnis tempora quis ad doloribus
+                        molestiae nemo laboriosam delectus modi ut vitae recusandae similique facilis saepe quam natus
+                        architecto magni nam, quaerat eius? Neque magni repellendus eum autem aperiam temporibus
+                        perspiciatis. Enim voluptas quisquam omnis porro, laborum molestiae obcaecati culpa, ipsa sit
+                        magni consectetur minus maxime iusto ullam nisi vero officiis velit saepe hic, impedit possimus
+                        ut sed eius quis. Repellendus, labore minus eum earum perspiciatis veniam, aspernatur, neque
+                        repellat corrupti unde possimus magni ex animi nisi officiis culpa et totam mollitia nihil
+                        perferendis nemo quisquam. Inventore suscipit consectetur voluptate dolores?</p>
+                </div>
+            </div>
+
+            <div class="description__item active" id="year2">
+                <h2 class="description__title">Расширение возможностей</h2>
+
+                <h3 class="description__undertitle">24 августа 2002г</h3>
+
+                <div class="description__text">
+                    <p>ВЛБАНК (ОАО) перешёл на промышленную эксплуатацию автоматизированной банковской системы
+                        ЦФТ-Банк, современного масштабируеиого решения,
+                        позволившего банку перестроить свой технологический цикл и расширить потенциальные возможности
+                        для развития</p>
+                </div>
+            </div>
+
+            <div class="description__item" id="year3">
+                <h2 class="description__title">Прогресс</h2>
+
+                <h3 class="description__undertitle">01 января 2003г</h3>
+
+                <div class="description__text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, dolorem! Facilis voluptatibus,
+                        laborum nisi voluptatum quasi ut, totam eum earum commodi porro neque laboriosam iste rem illo
+                        laudantium. Nesciunt hic beatae fugit suscipit voluptatum placeat eaque similique recusandae cum
+                        voluptatem magnam minus accusantium, illo ad explicabo cupiditate nulla harum sit culpa dolores
+                        repellendus. Perspiciatis ratione impedit nostrum hic facere rerum delectus cum velit atque
+                        temporibus tempora qui, ducimus accusantium distinctio sapiente aperiam perferendis consectetur
+                        iusto quia cumque alias? Tempore quidem, voluptate voluptates autem nostrum aspernatur officiis
+                        nemo voluptatibus suscipit nulla cum ipsa. Reprehenderit deleniti pariatur libero eaque quo sint
+                        laboriosam quaerat, tempora vero! Ea fugiat sed eveniet quam molestiae doloremque modi maxime
+                        vero quibusdam id? Ratione voluptates quas architecto, fuga eaque alias sapiente mollitia omnis
+                        impedit, temporibus vero officiis veniam at nemo exercitationem nostrum deleniti voluptas
+                        consectetur, dolores repudiandae? Quos repellat voluptate soluta nihil omnis iusto corrupti
+                        architecto ut quisquam!</p>
+                </div>
+            </div>
+
+            <div class="description__item" id="year4">
+                <h2 class="description__title">Максимум прибыли</h2>
+
+                <h3 class="description__undertitle">01 января 2004г</h3>
+
+                <div class="description__text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae atque iste possimus incidunt
+                        doloribus, sapiente praesentium totam laborum nobis quas sed nostrum in temporibus. Quo ea
+                        possimus commodi molestias maxime qui consectetur. Sapiente illo cum voluptatibus molestias
+                        optio! Nulla dolore, laboriosam ducimus quibusdam reiciendis minima ex iste ea totam. Debitis ut
+                        quam ea ex possimus, tempore cum molestiae incidunt porro amet, tempora quibusdam. Minus tenetur
+                        corporis impedit facere voluptates. Aliquam, quidem fugit! Exercitationem ducimus animi nostrum
+                        corrupti et sint molestias aspernatur quam deleniti sequi blanditiis eum, tempore eaque.
+                        Consequuntur illo ab accusamus quo rem placeat cupiditate? Ullam adipisci inventore quas fugiat
+                        asperiores rerum blanditiis animi aut facere eos? Fuga hic nihil dolorem reiciendis quidem
+                        voluptate perspiciatis ad cum, repellat cupiditate.</p>
+                </div>
+            </div>
+
+            <div class="description__item" id="year5">
+                <h2 class="description__title">Штиль</h2>
+
+                <h3 class="description__undertitle">01 января 2005г</h3>
+
+                <div class="description__text">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur quis voluptate aliquid,
+                        voluptatem commodi deleniti officiis rem ratione tempora nisi quia sed quam odit itaque magnam
+                        minus nostrum consequuntur quas obcaecati ex ab nemo! Animi nulla blanditiis impedit, nobis
+                        tempora fuga officia at temporibus aliquam non, ipsum accusantium. Repellendus delectus quaerat
+                        dolorum. Quo hic ratione autem voluptates est itaque id omnis doloremque magni saepe nesciunt,
+                        corporis unde doloribus qui mollitia ipsa, praesentium assumenda laboriosam veniam vel illo
+                        odit, ullam reprehenderit!</p>
+                </div>
+            </div>
+
+
+            <div class="description__item" id="year6">
+                <h2 class="description__title">Регресс</h2>
+
+                <h3 class="description__undertitle">01 января 2006г</h3>
+
+                <div class="description__text">
+                    <p>ВЛБАНК (ОАО) перешёл на промышленную эксплуатацию автоматизированной банковской системы
+                        ЦФТ-Банк, современного масштабируеиого решения,
+                        позволившего банку перестроить свой технологический цикл и расширить потенциальные возможности
+                        для развития
+                    </p>
+                </div>
+            </div>
+
+            <div class="description__item" id="year7">
+                <h2 class="description__title">Восстановление</h2>
+
+                <h3 class="description__undertitle">01 января 2007г</h3>
+
+                <div class="description__text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quia doloremque corrupti cumque!
+                        Voluptatum magni maxime provident inventore odit ab ipsam odio vel quae sint ea minima incidunt,
+                        cum quas reprehenderit praesentium sequi, aliquam harum necessitatibus pariatur fugit! Harum
+                        placeat laborum nesciunt expedita? Et sapiente quod itaque corrupti eos, doloribus, omnis
+                        cupiditate culpa tempore fuga possimus. A repellat ab maiores hic nesciunt nam, possimus vel qui
+                        sapiente excepturi esse magnam illum eaque reiciendis nisi enim. Enim maxime ab, at laborum
+                        accusantium excepturi maiores tenetur nulla molestiae id perspiciatis quos numquam commodi harum
+                        et deleniti repellendus qui odio tempora debitis! Ipsum inventore eveniet odit atque ex aperiam
+                        eum perspiciatis fugit labore voluptatibus. Iure tempore assumenda repellat officiis facilis
+                        tempora provident sed quaerat sequi ea quo odit laudantium explicabo deleniti illum eos, magnam
+                        aspernatur, placeat beatae quia alias! Aperiam iusto, ab iste architecto labore iure accusamus
+                        quo possimus velit amet sunt temporibus itaque dicta quia eaque inventore! Expedita odio, minima
+                        et voluptates soluta alias! Cum doloremque, quam vel fugit corrupti nisi quae voluptas saepe
+                        tempore officia quas consequuntur explicabo quaerat repellendus impedit quia rerum velit illum
+                        eveniet. Quisquam, ipsam amet accusantium tempore vero rerum labore nesciunt delectus ratione
+                        impedit tenetur aspernatur consequatur?</p>
+                </div>
+            </div>
+
+            <div class="description__item" id="year8">
+                <h2 class="description__title">Банки зло</h2>
+
+                <h3 class="description__undertitle">01 января 2008г</h3>
+
+                <div class="description__text">
+                    <p>ВЛБАНК (ОАО) перешёл на промышленную эксплуатацию автоматизированной банковской системы
+                        ЦФТ-Банк, современного масштабируеиого решения,
+                        позволившего банку перестроить свой технологический цикл и расширить потенциальные возможности
+                        для развития
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--JS-->
+    
+    <script src="js/jquery.scrollbar.min.js"></script>
+    
+    
+    <script src="js/app.js"></script>
+    <script src="js/moveShip.js"></script>
+
+</body>
+
+</html>
